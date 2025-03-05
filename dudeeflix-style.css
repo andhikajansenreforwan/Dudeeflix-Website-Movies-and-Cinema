@@ -1,0 +1,392 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+
+/* DUDEEFLIX NAVBAR + HOME BANNER SECTION */
+.dudeeflix-navbar-home-banner-section {
+    background-image: url(/image/Hawkeye\ pc\ wallpaper.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 15px 30px;
+}
+
+/* - Dudeeflix Navbar Section Styling */
+header.dudeeflix-navbar {
+    background-color: rgba(0, 0, 0,  60%);
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 15px 10px;
+    align-items: center;
+    border-radius: 15px;
+}
+
+header.dudeeflix-navbar .dudeeflix-navbar-logo img {
+    width: 180px;
+}
+
+
+header.dudeeflix-navbar ul.dudeeflix-navbar-menu-list {
+    display: flex;
+    gap: 3rem;
+}
+
+header.dudeeflix-navbar ul.dudeeflix-navbar-menu-list li {
+    list-style-type: none;
+}
+
+header.dudeeflix-navbar ul.dudeeflix-navbar-menu-list li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+header.dudeeflix-navbar ul.dudeeflix-navbar-menu-list li a:hover {
+    color: red;
+}
+
+header.dudeeflix-navbar ul.dudeeflix-navbar-menu-list li a.home {
+    color: red;
+}
+
+header.dudeeflix-navbar ul.dudeeflix-navbar-menu-list li a.home:hover {
+    color: white;
+}
+
+header.dudeeflix-navbar .navbar-login-and-register-button {
+    margin-inline-end: 25px;
+}
+
+header.dudeeflix-navbar .navbar-login-and-register-button button {
+    padding: 12px;
+    margin: 10px;
+    width: 100px;
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+header.dudeeflix-navbar .navbar-login-and-register-button 
+button.login-button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+header.dudeeflix-navbar .navbar-login-and-register-button 
+button.login-button:hover {
+    background-color: red;
+    border: 1px solid transparent;
+    color: white;
+}
+
+header.dudeeflix-navbar .navbar-login-and-register-button 
+button.register-button {
+    background-color: red;
+    border: 1px solid transparent;
+    color: white;
+}
+
+header.dudeeflix-navbar .navbar-login-and-register-button 
+button.register-button:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+/* Dudeeflix Home Banner Section Styling */
+.dudeeflix-home-banner-section {
+    width: 500px;
+    margin: 150px 50px 100px;
+    font-size: 20px;
+    color: black;
+}
+
+.dudeeflix-home-banner-section h1 {
+    font-size: 60px;
+}
+
+.dudeeflix-home-banner-section button {
+    padding: 15px;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    background-color: red;
+    border: 1px solid transparent;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.dudeeflix-home-banner-section button:hover {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
+
+/* MAIN */
+main {
+    padding: 200px 50px;
+}
+
+main article {
+    margin-bottom: 100px;
+}
+
+hr {
+    margin-block-end: 30px;
+}
+
+/* Article List Header  */
+.article-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-block-end: 10px;
+}
+
+.article-list-header a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+
+.article-list-header a:hover {
+    color: red;
+}
+
+/* Movies and Series List 1 Styling */
+.movie-and-series-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.movie-and-series-list .list img {
+    width: 300px;
+    height: 180px;
+    border-radius: 10px
+}
+
+.movie-and-series-list .list .list-text {
+    padding: 15px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.movie-and-series-list .list .list-text a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+.movie-and-series-list .list .list-text a:hover {
+    color: red;
+}
+
+/* Movies and Series List 2 Styling */
+.movies-and-series {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.movies-and-series .list-2 img {
+    width: 180px;
+    height: 260px;
+    border-radius: 10px;
+}
+
+.movies-and-series .list-2 .list-2-text {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.movies-and-series .list-2 .list-2-text a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+.movies-and-series .list-2 .list-2-text a:hover {
+    color: red;
+}
+
+/* Footer Section */
+footer {
+    margin: 0;
+    bottom: 0;
+    height: 550px;
+    background-color: rgb(0, 0, 0);
+}
+footer hr {
+    margin-block-start: 5px;
+}
+
+.footer-content {
+    height: 450px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.footer-content article {
+    width: 25%;
+}
+
+.footer-content .dudeeflix-footer-logo img {
+    width: 180px;
+}
+
+.footer-content .footer-navbar ul.dudeeflix-footer-navbar-menu-list li {
+    list-style-type: none;
+    padding-bottom: 15px;
+}
+
+.footer-content .footer-navbar ul.dudeeflix-footer-navbar-menu-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-content .footer-navbar ul.dudeeflix-footer-navbar-menu-list li a.home {
+    color: red;
+}
+
+.footer-content .footer-navbar ul.dudeeflix-footer-navbar-menu-list li a:hover {
+    color: red;
+}
+
+.footer-content .footer-navbar ul.dudeeflix-footer-navbar-menu-list li a.home:hover {
+    color: white;
+}
+
+.news-letter-section .news-letter-subscription-form input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.news-letter-section .news-letter-subscription-form input:focus {
+    outline: none;
+}
+
+.news-letter-section .news-letter-subscription-form button {
+    padding: 15px;
+    font-size: 18px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.news-letter-section .news-letter-subscription-form button:hover {
+    background-color: transparent;
+    border-color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+}
+
+footer a:hover {
+    color: red;
+}
+
+.dudeeflix-copyright {
+    padding: 20px 10px;
+    text-align: center;
+}
+
+/* Responsive Styling */
+/* FOR SMARTPHONE ANDROID/IPHONE */
+@media screen and (max-width : 480px) {
+    body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .dudeeflix-navbar-home-banner-section header {
+        height: 80px;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .dudeeflix-navbar-home-banner-section header ul {
+        display: none;
+    }
+
+    .dudeeflix-navbar-home-banner-section header 
+    .navbar-login-and-register-button {
+        display: none;
+    }
+
+    .dudeeflix-navbar-home-banner-section .dudeeflix-home-banner-section {
+        padding: 0;
+        width: 150px;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    
+
+    .dudeeflix-navbar-home-banner-section .dudeeflix-home-banner-section h1 {
+        font-size: 50px;
+    }
+
+    .dudeeflix-navbar-home-banner-section .dudeeflix-home-banner-section button {
+        width: 100px;
+    }
+
+    .article-list-header h1 {
+        font-size: 20px;
+    }
+
+    .article-list-header a {
+        font-size: 15px;
+    }
+
+    .list {
+        display: block;
+    }
+
+    .list-2 img {
+        width: 50px;
+    }
+}
